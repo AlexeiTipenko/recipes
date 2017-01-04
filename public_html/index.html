@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>Recipes</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />		<!--pointing to stylesheet and scripts.js-->
+	<script src="scripts.js"></script>
+
+
+	<script async>
+		getRecipes();				//Async call getRecipes from scripts.js
+	</script>
+</head>
+
+
+<body>
+	<h1>Your Recipes! </h1>
+
+	<div>
+		<form>
+			<label for="dropDown">Menu:</label><br/>
+			<select name="option" id="dropDown"></select>			<!--Dropdown menu for recipes-->
+		</form>
+	</div>
+
+	<button id="viewButton" onclick="viewInfo()">View</button>
+	<button id="submitButton" onclick="postInfo()">Submit </button>			<!--View and Submit buttons-->
+	<p id="checkMark">&#10004;</p>																			<!--Checkmark-->
+
+	<form>
+
+		<fieldset>
+			<!--Textfields for the name, duration, ingredients, steps and notes for a given recipe-->
+			<!--Each textfield has a label above it and an ID for accessing it's contents-->
+
+			<div>
+				<label for="name">Name:</label><br/>
+				<textarea id="name" style="width:300px"></textarea>
+			</div>
+
+			<div>
+				<label for="duration">Duration:</label><br/>
+				<textarea id="duration" style="width:300px"></textarea>
+			</div>
+
+			<div>
+				<label for="ingredients">Ingredients:</label><br/>
+				<textarea id="ingredients" style="width:400px; height:100px"></textarea>
+			</div>
+
+			<div>
+				<label for="steps">Steps:</label><br/>
+				<textarea id="steps" style="width:400px; height:150px"></textarea>
+			</div>
+
+			<div>
+				<label for="notes">Notes:</label><br/>
+				<textarea id="notes" style="width:400px; height:50px"></textarea>
+			</div>
+
+		</fieldset><br/>
+	</form>
+
+
+</body>
+</html>
