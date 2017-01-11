@@ -64,8 +64,6 @@ function handleRequest(req, res) {
 		else {
 
 			if(stats.isDirectory()){								//If stats object is a directory
-
-
 				if (pathname === "/recipes/") {				//check if it's pathname is recipes
 
 					fs.readdir(filename,function(err, files){  //async, read directory
@@ -73,8 +71,6 @@ function handleRequest(req, res) {
 						if(err){   												//try and open the file and handle the error, handle the error
 							respondErr(err);
 						}
-
-
 						else {
 							respond(200,files.join("<br/>"));
 						}
@@ -87,7 +83,6 @@ function handleRequest(req, res) {
 						if(err){   												//try and open the file and handle the error, handle the error
 							respondErr(err);
 						}
-
 						else respond(200, data);
 					});
 				}
@@ -99,7 +94,6 @@ function handleRequest(req, res) {
 					if(err){   													//try and open the file and handle the error, handle the error
 						respondErr(err)
 					}
-
 					else respond(200, data);
 				});
 			}
