@@ -1,5 +1,4 @@
 /*
-		COMP 2406 - Assignment 2
 		Name: Alexei Tipenko (100995947)
 		Date: Monday, October 31st, 2016
 
